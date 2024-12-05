@@ -1,0 +1,9 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^blog\.masjidarraudhohtelanaipura\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.blog\.masjidarraudhohtelanaipura\.net$
+RewriteRule ^/?$ "https\:\/\/blog\.masjidarraudhohtelanaipura\.net\/" [R=301,L]
+

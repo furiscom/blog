@@ -1,0 +1,1 @@
+<img src="banner1.jpg" class="img-fluid" alt="Responsive image" style="padding:40px">
